@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TitleSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Настройки"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="URL:"
+            android:layout_marginLeft="40sp"
+            android:textSize="21sp"
+            android:layout_weight = "1">
+        </TextView>
+        <EditText
+            android:id="@+id/URLRes"
+            android:layout_weight ="3"
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_marginRight="40sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="Токен:"
+            android:layout_marginLeft="40sp"
+            android:textSize="21sp"
+            android:layout_weight = "1">
+        </TextView>
+        <EditText
+            android:id="@+id/TokenRes"
+            android:layout_weight ="3"
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_marginRight="40sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="Ориентация:"
+            android:layout_marginLeft="40sp"
+            android:textSize="21sp"
+            android:layout_weight = "1"
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/ListOrientation"
+            android:layout_weight ="1.2"
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_marginRight="40sp"
+            android:entries="@array/typeOrientation"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnAuthConnect"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_height="wrap_content"
+            android:text="Аутентификация" >
+        </Button>
+<!--        <Button-->
+<!--            android:id="@+id/btnOpenAuthConnect"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_weight="2"-->
+<!--            android:layout_marginRight="40sp"-->
+<!--            android:layout_height="7mm"-->
+<!--            android:text=""-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:drawableBottom="@android:drawable/ic_menu_edit">-->
+<!--        </Button>-->
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="25sp">-->
+<!--    <TextView-->
+<!--        android:id="@+id/TitleAuth"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Аутентификация"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="35sp"-->
+<!--        android:textStyle="bold"/>-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:layout_width="0sp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Логин:"-->
+<!--            android:layout_marginLeft="40sp"-->
+<!--            android:textSize="21sp"-->
+<!--            android:layout_weight = "1">-->
+<!--        </TextView>-->
+<!--        <EditText-->
+<!--            android:id="@+id/authLogin"-->
+<!--            android:layout_weight ="2"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="0sp"-->
+<!--            android:layout_marginRight="40sp">-->
+<!--        </EditText>-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:layout_width="0sp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Пароль:"-->
+<!--            android:layout_marginLeft="40sp"-->
+<!--            android:textSize="21sp"-->
+<!--            android:layout_weight = "1">-->
+<!--        </TextView>-->
+<!--        <EditText-->
+<!--            android:id="@+id/authPass"-->
+<!--            android:layout_weight ="2"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="0sp"-->
+<!--            android:layout_marginRight="40sp"-->
+<!--            android:inputType="textPassword"-->
+<!--            >-->
+<!--        </EditText>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp">
+        <Button
+            android:id="@+id/btnChgPass"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_height="wrap_content"
+            android:text="Изменить пароль входа">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnSaveSett"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_height="wrap_content"
+            android:text="СОХРАНИТЬ ИЗМЕНЕНИЯ">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

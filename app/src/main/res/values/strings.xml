@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Artab</string>
+    <string-array name="typeOrientation">
+        <item>Вертикальная</item>
+        <item>Горизонтальная</item>
+    </string-array>
+</resources>

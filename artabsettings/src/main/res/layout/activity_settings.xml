@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TitleSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Настройки"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="URL:"
+            android:textSize="25sp"
+            android:layout_weight = "1">
+        </TextView>
+        <EditText
+            android:id="@+id/URLRes"
+            android:layout_weight ="3"
+            android:layout_height="wrap_content"
+            android:layout_width="0sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnSaveSett"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_height="wrap_content"
+            android:text="СОХРАНИТЬ НАСТРОЙКИ">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
